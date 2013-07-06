@@ -17,6 +17,7 @@ namespace jQueryUploadTest {
 		public void ProcessRequest (HttpContext context) {
 			context.Response.AddHeader("Pragma", "no-cache");
 			context.Response.AddHeader("Cache-Control", "private, no-cache");
+			context.Response.AddHeader("Access-Control-Allow-Origin", "*");
 
 			HandleMethod(context);
 		}
